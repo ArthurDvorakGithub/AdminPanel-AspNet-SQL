@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Unit[] units = (Unit[])ViewData["Units"];
+}
+
+<h1>Список игроков</h1>
+<div class="card-group">
+    <div class="row">
+        @for (int i = 0; i < units.Length; i++)
+        {
+
+            <div class="card col-sm-3" style="width: 20%">
+                <img src=@units[i].AvatarURL class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@units[i].Name</h5>
+                    <p class="card-text">@units[i].Health</p>
+                </div>
+            </div>
+        }
+
+    </div>
+    </div>
