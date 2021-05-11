@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "UnitInfo";
+    Unit unit = (Unit)ViewData["Unit"];
+}
+
+<h1>Unit Info page</h1>
+
+
+    <h2>@unit.Name</h2>
+
+    <img src="@unit.AvatarURL" />
+
+    <p>
+        Здоровье - @unit.Health
+    </p>
+
+
